@@ -1,0 +1,28 @@
+/* In your styles.css or variables.css file */
+
+:root {
+	/* --- Default Theme (e.g., Light Mode) --- */
+	--font-primary: "Inter", sans-serif;
+	--font-heading: "Montserrat", sans-serif;
+	--font-code: "Fira Code", monospace;
+	--color-background-primary: #f8f9fa; /* Very light grey/off-white */
+	--color-background-secondary: #ffffff; /* Pure white for cards, modals */
+	--color-text-primary: #343a40; /* Dark charcoal grey for body text */
+	--color-text-heading: #212529; /* Near black for headings */
+	--color-accent-primary: #007bff; /* Vibrant Blue for links, buttons */
+	--color-accent-secondary: #6c757d; /* Subtle grey for secondary elements */
+	--color-border: #e9ecef; /* Light grey for borders/separators */
+	--color-white: #ffffff; /* Utility white */
+	--color-black: #000000; /* Utility black */
+}
+
+/* --- Dark Theme --- */
+.dark-theme {
+	--color-background-primary: #212529; /* Deep charcoal/near black */
+	--color-background-secondary: #343a40; /* Slightly lighter dark grey for cards */
+	--color-text-primary: #e9ecef; /* Light grey for body text */
+	--color-text-heading: #ffffff; /* Pure white for headings */
+	--color-accent-primary: #61dafb; /* React blue (example for dark mode accent) */
+	--color-accent-secondary: #868e96; /* Lighter grey for secondary elements */
+	--color-border: #495057; /* Darker grey for borders */
+}
