@@ -1,0 +1,76 @@
+body,
+#container {
+	font-family: var(--font-primary);
+	background-color: var(--color-background-primary);
+	font-size: 16px;
+}
+#container {
+	margin: 0 auto;
+	width: 95%;
+}
+p {
+	line-height: 1.6;
+	overflow-wrap: break-word;
+}
+h1,
+h2,
+h3 {
+	line-height: 1.2;
+}
+#introduction {
+	font-family: var(--font-heading); /* Use your chosen heading font */
+	color: var(--color-text-heading); /* Your dark heading color */
+	font-size: 1.5rem;
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
+	font-weight: 800;
+	text-transform: capitalize;
+	width: 100%;
+	text-align: center;
+	letter-spacing: -0.02rem;
+}
+#hero-details {
+	padding: 1rem 0;
+}
+#hero-details > p:first-child::first-letter {
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: var(--color-text-primary);
+	float: left;
+	line-height: 0.8;
+	margin-right: 0.15em;
+	font-family: var(--font-heading);
+}
+#hero {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding: 1rem 0;
+}
+.hero-image {
+	max-width: 320px;
+	margin: 0 auto;
+}
+.hero-image img {
+	height: auto;
+	max-height: 375px;
+	display: block;
+	border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1028px) {
+	#hero {
+		flex-flow: row;
+	}
+	#hero-details {
+		padding: 0;
+	}
+	.hero-image {
+		flex: 0 0 40%;
+	}
+	.hero-image img {
+		box-shadow: 0 20px 20px #808080;
+	}
+}
