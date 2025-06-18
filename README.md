@@ -65,8 +65,7 @@ This project is licensed under the MIT License.
 
 **Owen Erhabor**
 
-- [GitHub Profile](https://github.com/owen-6936) # Replace with your actual GitHub username
-- [LinkedIn Profile](https://linkedin.com/in/owen-erhabor-80958b262) # Replace with your actual LinkedIn profile
-- [Twitter Profile](https://x.com/Owen66936) # Replace with your actual Twitter handle
-
+- [GitHub Profile](https://github.com/owen-6936)
+- [LinkedIn Profile](https://linkedin.com/in/owen-erhabor-80958b262)
+- [Twitter Profile](https://x.com/Owen66936)
 ---
