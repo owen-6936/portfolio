@@ -1,15 +1,58 @@
 /* In your styles.css or variables.css file */
 
+@font-face {
+	font-family: "Dancing_Script";
+	font-weight: 100 500;
+	font-style: normal italic;
+	font-display: swap;
+	src: url("../assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.woff2")
+			format("woff2-variations"),
+		url("../assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.woff")
+			format("woff-variations"),
+		/* Use woff-variations for variable woff */
+			url("../assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf")
+			format("truetype-variations");
+}
+@font-face {
+	font-family: "Barlow Condensed";
+	font-style: normal italic;
+	font-display: swap;
+	src: url("../assets/fonts/Barlow_Condensed/barlowcondensed-bold-webfont.woff2")
+			format("woff2-variations"),
+		url("../assets/fonts/Barlow_Condensed/barlowcondensed-bold-webfont.woff")
+			format("woff-variations"),
+		url("../assets/fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf")
+			format("truetype-variations");
+}
+@keyframes blink-caret {
+	from,
+	to {
+		border-right: 0.15em solid transparent;
+	}
+	50% {
+		border-right: 0.15em solid var(--color-accent-primary);
+	}
+}
+@keyframes swoop-in {
+	100% {
+		right: 0;
+	}
+}
 :root {
+	--blink-caret: blink-caret;
+	--swoop-in: swoop-in;
 	/* --- Default Theme (e.g., Light Mode) --- */
+	--font-logo: "Dancing_Script", "Montserrat", serif;
 	--font-primary: "Inter", sans-serif;
-	--font-heading: "Montserrat", sans-serif;
+	--font-heading: "Barlow Condensed", "Montserrat", sans-serif;
 	--font-code: "Fira Code", monospace;
-	--color-background-primary: #f8f9fa; /* Very light grey/off-white */
-	--color-background-secondary: #ffffff; /* Pure white for cards, modals */
-	--color-text-primary: #343a40; /* Dark charcoal grey for body text */
-	--color-text-heading: #212529; /* Near black for headings */
-	--color-accent-primary: #007bff; /* Vibrant Blue for links, buttons */
+	--color-background-primary: #fafafa;
+	--color-background-secondary: #ffffff;
+	--color-background-neutral: #e0e0e0;
+	--color-text-primary: #2c2c2c;
+	--color-text-secondary: #666666;
+	--color-text-heading: #212529;
+	--color-accent-primary: #5c859b; /* Vibrant Blue for links, buttons */
 	--color-accent-secondary: #6c757d; /* Subtle grey for secondary elements */
 	--color-border: #e9ecef; /* Light grey for borders/separators */
 	--color-white: #ffffff; /* Utility white */

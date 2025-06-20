@@ -13,17 +13,23 @@
 <body>
     <header>
         <nav>
-            <h3 id="logo">OWEN LIBRARY</h3>
-            <ul>
-                <li class="nav-items">Home</li>
-                <li class="nav-items">About</li>
-                <li class="nav-items">Projects</li>
-                <li class="nav-items">Contact</li>
-            </ul>
+            <h3 id="logo">OWEN ERHABOR</h3>
+            <span role="button" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 32 32" fill="none">
+                    <path d="M4 24V22H28V24H4ZM4 17V15H28V17H4ZM4 10V8H28V10H4Z" fill="currentColor" />
+                </svg></span>
+            <div id="navbar-overlay">
+                <ul id="nav-links">
+                    <li class="nav-items">Home</li>
+                    <li class="nav-items">About</li>
+                    <li class="nav-items">Projects</li>
+                    <li class="nav-items">Contact</li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <h1 id="introduction">Welcome To My Portfolio: An Introduction</h1>
+        <h1 id="introduction" class="blink-caret">Welcome To My Portfolio: An introduction</h1>
         <section id="hero">
             <figure class="hero-image"><img height="375" src="assets/images/competent_owen.png"
                     alt="Professional headshot of Owen Erhabor, aspiring full-stack developer" srcset="">
@@ -106,8 +112,14 @@
             <a href="#">Home</a> | <a href="projects.html">Projects</a> | <a href="about.html">About</a> | <a
                 href="contact.html">Contact</a>
         </div>
-        <div id="social-links"></div>
-        <h5 id="attribution">Designed & developed by Owen Erhabor © 2025</h5>
+        <ul id="social-links">
+            <li><img src="./assets/icons/github.png" alt="github logo" srcset=""></li>
+            <li><img src="./assets/icons/linkedin.png" alt="linkedin logo" srcset=""></li>
+            <li><img src="./assets/icons/figma.png" alt="figma logo" srcset=""></li>
+            <li><img src="./assets/icons/instagram.png" alt="instagram logo" srcset=""></li>
+            <li><img src="./assets/icons/x.png" alt="x logo" srcset=""></li>
+        </ul>
+        <h5 id="copyright">Designed & developed by Owen Erhyabor © 2025</h5>
     </footer>
 </body>
 
