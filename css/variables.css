@@ -24,22 +24,12 @@
 		url("../assets/fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf")
 			format("truetype-variations");
 }
-@keyframes blink-caret {
-	from,
-	to {
-		border-right: 0.15em solid transparent;
-	}
-	50% {
-		border-right: 0.15em solid var(--color-accent-primary);
-	}
-}
 @keyframes swoop-in {
 	100% {
 		right: 0;
 	}
 }
 :root {
-	--blink-caret: blink-caret;
 	--swoop-in: swoop-in;
 	/* --- Default Theme (e.g., Light Mode) --- */
 	--font-logo: "Dancing_Script", "Montserrat", serif;

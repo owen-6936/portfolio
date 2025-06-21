@@ -1,4 +1,4 @@
-export default async function typewriter(htmlElement, text, writingSpeed) {
+export default async function typewriter(htmlElement, text = "Sample Text", writingSpeed = 100) {
     // Error handling
     if (!(htmlElement instanceof HTMLElement)) {
         throw new TypeError("expected an Html element ");
@@ -11,22 +11,18 @@ export default async function typewriter(htmlElement, text, writingSpeed) {
         return;
     }
 
-    const textContentLen = htmlElement.textContent.length;
+    const textContentLength = htmlElement.textContent.length;
     const textLength = text.length;
 
-    if (textContentLen === 0) {
-        htmlElement.classList.add("blink-caret");
-    }
     // handle cleanup
-    if (textContentLen === textLength) {
+    if (textContentLength === textLength) {
         const typingHandlerId = Number(htmlElement.getAttribute("typingHandlerId"));
-        htmlElement.classList.remove("blink-caret");
         clearTimeout(typingHandlerId);
         return "Typing Completed...";
     };
 
     // add each character on function recall
-    htmlElement.textContent += text[textContentLen];
+    htmlElement.textContent += text[textContentLength];
 
     /**initialize the typingHandlerId to fully diasble the typer later */
     let typingHandlerId = setTimeout(() => typewriter(htmlElement, text, writingSpeed), writingSpeed);
