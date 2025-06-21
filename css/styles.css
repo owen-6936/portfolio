@@ -112,7 +112,7 @@ section {
 	width: calc(100% - 2.5rem);
 }
 #introduction {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	text-transform: capitalize;
 	overflow: hidden;
 	margin: 2rem auto;
