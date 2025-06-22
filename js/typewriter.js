@@ -1,4 +1,4 @@
-export default async function typewriter(htmlElement, text = "Sample Text", writingSpeed = 100) {
+export default function typewriter(htmlElement, text = "Sample Text", writingSpeed = 100) {
     // Error handling
     if (!(htmlElement instanceof HTMLElement)) {
         throw new TypeError("expected an Html element ");
