@@ -28,6 +28,7 @@ nav {
 	justify-content: space-between;
 	position: relative;
 	border-bottom: 1px solid var(--color-border);
+	height: 4rem;
 	overflow: hidden;
 }
 nav #logo {
@@ -61,8 +62,7 @@ nav #logo {
 	display: block;
 }
 nav #nav-list {
-	--width: 320px;
-	width: var(--width);
+	width: var(--side-bar-width);
 	background-color: var(--color-background-primary);
 	display: flex;
 	flex-flow: column;
@@ -71,7 +71,8 @@ nav #nav-list {
 	padding-left: 2rem;
 	margin: 0;
 	position: fixed;
-	right: calc(var(--width) * -1);
+	right: calc(var(--side-bar-width) * -1);
+	transition: right 0.3s ease-out;
 	top: 0;
 	height: 100vh;
 	z-index: 1001;
@@ -85,8 +86,11 @@ nav #nav-list::before {
 nav #nav-list li a {
 	text-decoration: none;
 }
-.swoop-in {
-	animation: swoop-in 0.5s forwards ease-out;
+nav #nav-list.swoop-in {
+	right: 0;
+}
+nav #nav-list.swoop-out {
+	right: calc(var(--side-bar-width) * -1);
 }
 nav ul#nav-links li {
 	padding: 15px;
@@ -331,9 +335,24 @@ footer #copyright {
 	#navbar-overlay {
 		display: none;
 	}
-	nav ul#nav-links {
+	nav #logo {
+		flex-basis: 50%;
+	}
+	nav #nav-list {
 		background-color: transparent;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 50%;
 		right: 0;
+		height: 4rem;
+	}
+	nav #nav-list::before {
+		display: none;
+	}
+	nav #nav-links {
+		position: relative;
+		background-color: transparent;
 		width: max-content;
 		height: 61px;
 		display: flex;

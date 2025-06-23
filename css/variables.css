@@ -24,13 +24,9 @@
 		url("../assets/fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf")
 			format("truetype-variations");
 }
-@keyframes swoop-in {
-	100% {
-		right: 0;
-	}
-}
+
 :root {
-	--swoop-in: swoop-in;
+	--side-bar-width: 320px;
 	/* --- Default Theme (e.g., Light Mode) --- */
 	--font-logo: "Dancing_Script", "Montserrat", serif;
 	--font-primary: "Inter", sans-serif;

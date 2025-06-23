@@ -9,20 +9,16 @@ const navbarOverlay = document.querySelector("#navbar-overlay");
 const navbarList = document.querySelector("#nav-list");
 const menuToggle = document.querySelector("#menu-toggle");
 
-function waitForAnimationEnd(element) {
-    return new Promise(resolve => {
-        const handleAnimationEnd = () => {
-            element.removeEventListener('animationend', handleAnimationEnd);
-            resolve();
-        };
-        element.addEventListener('animationend', handleAnimationEnd);
-    });
-}
-
-async function handleMenuTogle() {
+function handleMenuTogle() {
+    if (navbarList.classList.contains("swoop-out")) navbarList.classList.remove("swoop-out");
     navbarList.classList.add("swoop-in");
-    await waitForAnimationEnd(navbarList);
-    navbarOverlay.classList.add("swoop-in");
+    navbarOverlay.style.display = "block";
 }
 
-menuToggle.addEventListener("click", handleMenuTogle);
+function handleCloseSidebar() {
+    if (navbarList.classList.contains("swoop-in")) navbarList.classList.remove("swoop-in");
+    navbarList.classList.add("swoop-out");
+    navbarOverlay.style.display = "none";
+}
+
+menuToggle.addEventListener("click", handleMenuTogle); navbarOverlay.addEventListener("click", handleCloseSidebar);
