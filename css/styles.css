@@ -149,6 +149,10 @@ section {
 	align-items: center;
 }
 .hero-image {
+	background-image: url("../assets/images/competent_owen_placeholder.webp");
+	background-position: center;
+	background-size: cover;
+	filter: blur(0%);
 	border-radius: 20px;
 	max-width: 400px;
 	margin: 0 auto;
@@ -160,10 +164,15 @@ section {
 	max-width: 100%;
 	max-height: 375px;
 	display: block;
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
 	border-radius: 20px;
 	object-fit: cover;
 	object-position: center;
 	box-shadow: 0 0 0px 3.5px rgba(0, 0, 0, 0.4);
+}
+.hero-image img.loaded {
+	opacity: 1;
 }
 .hero-image::after {
 	box-shadow: inset 3px 3px 10px 0 #000000;

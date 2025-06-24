@@ -2,6 +2,7 @@ import typewriter from "./typewriter.js";
 
 const heading = document.querySelector("#introduction");
 const text = "Welcome To My Portfolio: An introduction";
+const heroImage = document.querySelector(".hero-image");
 
 typewriter(heading, text, 50);
 
@@ -22,3 +23,6 @@ function handleCloseSidebar() {
 }
 
 menuToggle.addEventListener("click", handleMenuTogle); navbarOverlay.addEventListener("click", handleCloseSidebar);
+heroImage.children[0].addEventListener("load", (e) => {
+    e.target.classList.add("loaded");
+});
