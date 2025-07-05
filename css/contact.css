@@ -232,7 +232,6 @@ input {
     }
   }
   main#contact-container {
-    height: 55vh;
     flex-flow: row;
   }
   #contact-me-section {
