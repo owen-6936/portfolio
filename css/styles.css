@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 *,
 *::before,
@@ -335,17 +336,23 @@ footer {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
+  gap: 0.3rem;
   width: 100%;
   letter-spacing: 0.02em;
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
 }
+footer #footer-nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 footer #social-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 footer #copyright {
   font-size: 0.8rem;

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me Page</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <script defer src="../js/navbarAnim.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3 id="logo">OWEN ERHABOR</h3>
+        <button id="menu-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <path
+              d="M4 24V22H28V24H4ZM4 17V15H28V17H4ZM4 10V8H28V10H4Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div id="nav-list">
+          <span role="button" id="menu-close-btn">X</span>
+          <ul id="nav-links">
+            <li class="nav-items"><a href="../index.html">Home</a></li>
+            <li class="nav-items"><a href="#">About</a></li>
+            <li class="nav-items"><a href="#">Projects</a></li>
+            <li class="nav-items"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div id="navbar-overlay"></div>
+      </nav>
+    </header>
+    <main id="contact-container">
+      <section id="contact-form-section">
+        <form action="" id="contact-form">
+          <h2 id="contact-heading">Get In Touch</h2>
+          <label for="name">
+            <img src="../assets/icons/person.png" />
+            <input
+              class="contact-form-field"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Name"
+              required
+            />
+          </label>
+          <label for="email">
+            <img src="../assets/icons/mail.png" />
+            <input
+              class="contact-form-field"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </label>
+          <textarea
+            placeholder="write your message here..."
+            class="contact-form-field"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="contact-form-field" type="button">Send</button>
+        </form>
+      </section>
+      <section id="contact-me-section">
+        <h1 id="contact-me-heading" class="bouncing-heading">Contact Me</h1>
+        <ul id="personal-links">
+          <li>
+            <img src="../assets/icons/telephone.png" alt="" /><a
+              href="tel:+447438782177"
+              >+447438782177</a
+            >
+          </li>
+          <li>
+            <img src="../assets/icons/mail.png" alt="" />
+            <a href="mailto:erhaborowen3@gmail.com">erhaborowen3@gmail.com</a>
+          </li>
+          <li>
+            <img src="../assets/icons/location.png" alt="" />
+            <a
+              href="https://www.google.com/search?q=london"
+              target="_blank"
+              rel="noopener noreferrer"
+              >London, UK</a
+            >
+          </li>
+          <li>
+            <img src="../assets/icons/world-wide-web.png" alt="" />
+            <a
+              href="http://owenlibrary.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Owen Library</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-nav-links">
+        <a href="../index.html">Home</a> | <a href="#">Projects</a> |
+        <a href="#">About</a> | <a href="#">Contact</a>
+      </div>
+      <ul id="social-links">
+        <li>
+          <a
+            href="https://github.com/owen-6936"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="../assets/icons/github.png" alt="github logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/owen-erhabor-80958b262/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="../assets/icons/linkedin.png" alt="linkedin logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.figma.com/@owen90"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="../assets/icons/figma.png" alt="figma logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/owen6936_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="../assets/icons/instagram.png" alt="instagram logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://x.com/Owen66936"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="../assets/icons/x.png" alt="x logo"
+          /></a>
+        </li>
+      </ul>
+      <h5 id="copyright">Designed & developed by Owen Erhabor © 2025</h5>
+    </footer>
+  </body>
+</html>
