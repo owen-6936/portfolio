@@ -299,8 +299,24 @@ section {
   justify-content: space-between;
 }
 .project {
+  padding-top: 0;
   max-width: 400px;
   border: 2px solid var(--color-accent-secondary);
+}
+.project-image {
+  width: calc(400px - 1%);
+  height: 300px;
+  align-self: flex-start;
+  justify-self: center;
+  margin: 0;
+}
+.project-image img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
 }
 .project-links {
   display: flex;
@@ -346,7 +362,9 @@ footer {
 footer #footer-nav-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 footer #social-links {
   display: flex;
