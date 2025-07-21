@@ -299,12 +299,16 @@ section {
   justify-content: space-between;
 }
 .project {
-  padding-top: 0;
+  padding: 0;
+  min-width: 300px;
   max-width: 400px;
   border: 2px solid var(--color-accent-secondary);
 }
+.project-body {
+  margin: 2rem;
+}
 .project-image {
-  width: calc(400px - 1%);
+  width: 100%;
   height: 300px;
   align-self: flex-start;
   justify-self: center;
@@ -313,7 +317,7 @@ section {
 .project-image img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: 100%;
+  width: inherit;
   height: inherit;
   object-fit: cover;
   object-position: center;
