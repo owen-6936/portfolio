@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-neutral {
+    background-color: #e0e0e0;
+  }
+  .bg-primary {
+    background-color: #fafafa;
+  }
+  .bg-secondary {
+    background-color: #ffffff;
+  }
+  .bg-accent {
+    background-color: #5c859b;
+  }
+  .text-neutral {
+    color: #666666;
+  }
+  .text-primary {
+    color: #2c2c2c;
+  }
+  .text-secondary {
+    color: #666666;
+  }
+  .text-heading {
+    color: #212529;
+  }
+  .text-accent {
+    color: #5c859b;
+  }
+  .text-accent-active {
+    color: rgba(92, 133, 155, 1);
+  }
+  .text-accent-hover {
+    color: #4a6b7c;
+  }
+  .text-accent-secondary {
+    color: #6c757d;
+  }
+  .border-primary {
+    border-color: #e9ecef;
+  }
+  .text-link {
+    color: #5e5752;
+  }
+  .text-link-hover {
+    color: #3f474a;
+  }
+  .text-link-active {
+    color: #2a2f31;
+  }
+  .font-primary {
+    font-family: "Inter", "sans-serif";
+  }
+  .font-logo {
+    font-family: "Dancing_Script", "Montserrat", "serif";
+  }
+  .font-heading {
+    font-family: "Barlow_Condensed", "Montserrat", "sans-serif";
+  }
+  .font-code {
+    font-family: "Fira Code", "monospace";
+  }
+  .sidebar {
+    width: var(--my-spacing-sidebar);
+  }
+}
