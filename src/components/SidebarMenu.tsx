@@ -38,11 +38,7 @@ export default function SidebarMenu({
             <hr className="text-gray-500 mt-0 mb-6" />
 
             {links.map((link) => (
-              <Link
-                key={link.key}
-                to={link.url}
-                className="text-lg font-heading text-accent ml-4"
-              >
+              <Link key={link.key} to={link.url} className="text-accent">
                 {link.title}
               </Link>
             ))}

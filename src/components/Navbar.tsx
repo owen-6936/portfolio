@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-neutral-200/70 shadow-md">
+    <header className="fixed top-0 left-0 w-full z-50 bg-neutral/10 shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-logo font-bold">Owen Erhabor</div>
@@ -15,7 +15,11 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6">
           {links.map((link) => (
-            <Link key={link.key} to={link.url} className="text-accent">
+            <Link
+              key={link.key}
+              to={link.url}
+              className="text-accent px-1.5 py-1 rounded hover:bg-slate-100"
+            >
               {link.title}
             </Link>
           ))}

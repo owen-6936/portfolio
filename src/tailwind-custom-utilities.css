@@ -27,12 +27,13 @@
   }
   .text-accent {
     color: #5c859b;
+    text-shadow: 0 0 1px rgba(92, 127, 145, 0.6);
   }
   .text-accent-active {
-    color: rgba(92, 133, 155, 1);
+    color: #2c3e50;
   }
   .text-accent-hover {
-    color: #4a6b7c;
+    color: #3a5968;
   }
   .text-accent-secondary {
     color: #6c757d;
@@ -63,5 +64,24 @@
   }
   .sidebar {
     width: var(--my-spacing-sidebar);
+  }
+  .underline-fade::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: rgba(92, 127, 145, 1);
+    transition: width 0.4s ease;
+  }
+
+  .underline-fade:hover::before {
+    width: 100%;
+  }
+
+  .underline-fade {
+    position: relative;
+    display: inline-block;
   }
 }
