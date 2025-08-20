@@ -25,7 +25,7 @@ export default function SidebarMenu({
 
           {/* Sidebar */}
           <motion.div
-            className="fixed top-0 right-0 h-full w-[320px] bg-white z-50 p-6 flex flex-col space-y-6"
+            className="fixed top-0 right-0 h-full w-[var(--side-bar-width)] bg-white z-50 p-6 flex flex-col space-y-6"
             initial={{ x: 320 }}
             animate={{ x: 0 }}
             exit={{ x: 320 }}

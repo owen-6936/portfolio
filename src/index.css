@@ -21,6 +21,8 @@
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --side-bar-width: 320px;
+  --nav-height: 3.5rem;
 }
 
 a {
@@ -39,10 +41,4 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-@property --side-bar-width {
-  syntax: "<length>";
-  initial-value: 320px;
-  inherits: false;
 }

@@ -84,4 +84,7 @@
     position: relative;
     display: inline-block;
   }
+  .nav-height {
+    height: 3.5rem;
+  }
 }
