@@ -2,15 +2,20 @@ import { motion } from "framer-motion";
 import heroImage from "../../assets/images/competent_owen.webp";
 import locationIcon from "../../assets/icons/google-maps.png";
 import checkIcon from "../../assets/icons/checked.png";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  useEffect(() => {
+    const img = new Image();
+    img.src = heroImage;
+    img.onload = () => setImageLoaded(true);
+  }, []);
+
   return (
-    <section
-      id="hero"
-      className="p-0 flex flex-col items-center justify-evenly flex-wrap gap-8"
-    >
+    <section className="hero">
       <motion.figure
-        className="rounded-2xl w-full max-w-[400px] overflow-hidden box-shadow relative hero-image"
+        className="hero-image"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -20,13 +25,12 @@ const Hero = () => {
           alt="Professional headshot of Owen Erhabor, aspiring full-stack developer"
           height="375"
           loading="lazy"
-          className="rounded-lg shadow-md shadow-gray-500 w-full max-w-full max-h-[375px] object-cover object-center"
+          className={`${imageLoaded ? "loaded" : ""}`}
         />
       </motion.figure>
 
       <motion.div
-        id="hero-details"
-        className="max-w-[415px] py-4"
+        className="hero-details"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}

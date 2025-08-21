@@ -1,4 +1,5 @@
 import Hero from "./home/Hero";
+import "../styles/home.css";
 
 export default function Home() {
   return (

@@ -1,93 +1,76 @@
 @import "tailwindcss";
 
-@layer utilities {
-  .bg-neutral {
-    background-color: #e0e0e0;
-  }
-  .bg-primary {
-    background-color: #fafafa;
-  }
-  .bg-secondary {
-    background-color: #ffffff;
-  }
-  .bg-accent {
-    background-color: #5c859b;
-  }
-  .text-neutral {
-    color: #666666;
-  }
-  .text-primary {
-    color: #2c2c2c;
-  }
-  .text-secondary {
-    color: #666666;
-  }
-  .text-heading {
-    color: #212529;
-  }
-  .text-accent {
-    color: #5c859b;
-    text-shadow: 0 0 1px rgba(92, 127, 145, 0.6);
-  }
-  .text-accent-active {
-    color: #2c3e50;
-  }
-  .text-accent-hover {
-    color: #3a5968;
-  }
-  .text-accent-secondary {
-    color: #6c757d;
-  }
-  .border-primary {
-    border-color: #e9ecef;
-  }
-  .text-link {
-    color: #5e5752;
-  }
-  .text-link-hover {
-    color: #3f474a;
-  }
-  .text-link-active {
-    color: #2a2f31;
-  }
-  .font-primary {
-    font-family: "Inter", "sans-serif";
-  }
-  .font-logo {
-    font-family: "Dancing_Script", "Montserrat", "serif";
-  }
-  .font-heading {
-    font-family: "Barlow_Condensed", "Montserrat", "sans-serif";
-  }
-  .font-code {
-    font-family: "Fira Code", "monospace";
-  }
-  .sidebar {
-    width: var(--my-spacing-sidebar);
-  }
-  .underline-fade::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 0%;
-    background-color: rgba(92, 127, 145, 1);
-    transition: width 0.4s ease;
-  }
+/* stylelint-disable
+  at-rule-no-unknown
+ */
+@utility bg-neutral {
+  background-color: #e0e0e0;
+}
+@utility bg-primary {
+  background-color: #fafafa;
+}
+@utility bg-secondary {
+  background-color: #ffffff;
+}
+@utility bg-accent {
+  background-color: #5c859b;
+}
+@utility text-neutral {
+  color: #666666;
+}
+@utility text-primary {
+  color: #2c2c2c;
+}
+@utility text-secondary {
+  color: #666666;
+}
+@utility text-heading {
+  color: #212529;
+}
+@utility text-accent {
+  color: #5c859b;
+  text-shadow: 0 0 1px rgba(92, 127, 145, 0.6);
+}
+@utility text-accent-active {
+  color: #2c3e50;
+}
+@utility text-accent-hover {
+  color: #3a5968;
+}
+@utility text-accent-secondary {
+  color: #6c757d;
+}
+@utility border-primary {
+  border-color: #e9ecef;
+}
+@utility text-link {
+  color: #5e5752;
+}
+@utility text-link-hover {
+  color: #3f474a;
+}
+@utility text-link-active {
+  color: #2a2f31;
+}
+@utility font-primary {
+  font-family: "Inter", "sans-serif";
+}
+@utility font-logo {
+  font-family: "Dancing_Script", "Montserrat", "serif";
+}
+@utility font-heading {
+  font-family: "Barlow_Condensed", "Montserrat", "sans-serif";
+}
+@utility font-code {
+  font-family: "Fira Code", "monospace";
+}
+@utility sidebar {
+  width: var(--my-spacing-sidebar);
+}
+@utility nav-height {
+  height: 3.5rem;
+}
 
-  .underline-fade:hover::before {
-    width: 100%;
-  }
-
-  .underline-fade {
-    position: relative;
-    display: inline-block;
-  }
-  .nav-height {
-    height: 3.5rem;
-  }
-  .box-shadow {
-    box-shadow: 0 0 0px 3.5px rgba(0, 0, 0, 0.4);
-  }
+@utility box-shadow {
+  box-shadow: 0 0 0px 3.5px rgba(0, 0, 0, 0.4);
 }

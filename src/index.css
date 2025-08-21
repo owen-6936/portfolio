@@ -53,25 +53,3 @@ section {
 p {
   @apply mb-4 leading-relaxed;
 }
-.hero-image::after {
-  box-shadow: inset 3px 3px 10px 0 #000000;
-  content: "";
-  display: block;
-  border-radius: 16px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-#hero-details > p:first-child::first-letter {
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: var(--color-text-primary);
-  float: left;
-  line-height: 0.8;
-  margin-right: 0.15em;
-  font-family: var(--font-heading);
-}
-.hero-details-link {
-  @apply flex justify-start items-center gap-2;
-}

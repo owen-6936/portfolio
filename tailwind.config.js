@@ -9,5 +9,5 @@ export default {
       },
     },
   },
-  include: ["./src/**/*.{js,jsx,ts,tsx}"],
+  include: ["./src/**/*.{js,jsx,ts,tsx}, ./src/**/*.{css,scss}"],
 };
