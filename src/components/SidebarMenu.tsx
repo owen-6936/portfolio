@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "./CustomLink";
-import links from "../constant/links";
+import links from "../constants/links";
 import { X } from "lucide-react";
 
 export default function SidebarMenu({

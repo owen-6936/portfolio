@@ -1,10 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SidebarMenu from "./SidebarMenu";
 import Link from "./CustomLink";
-import links from "../constant/links";
+import links from "../constants/links";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [activeNavItem, setActiveNavItem] = useState("");
+
+  const handleLocationChange = () => {
+    const currentPath = location.pathname;
+    const activeLink = links.find((link) => link.url === currentPath);
+    setActiveNavItem(activeLink ? String(activeLink.key) : "");
+  };
+
+  useEffect(() => {
+    handleLocationChange();
+  }, [location.pathname]);
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-gray-100 shadow-md h-[var(--nav-height)]">
@@ -18,7 +30,9 @@ export default function Navbar() {
             <Link
               key={link.key}
               to={link.url}
-              className="text-accent px-1.5 py-1 rounded hover:bg-slate-100"
+              className={`${
+                activeNavItem === link.key ? "link-active" : "link"
+              }`}
             >
               {link.title}
             </Link>

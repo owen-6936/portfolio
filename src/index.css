@@ -3,7 +3,8 @@
 
 @font-face {
   font-family: "Dancing_Script";
-  src: url("/src/assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.woff2") format("woff2-variations");
+  src: url("/src/assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.woff2")
+    format("woff2-variations");
   font-weight: 100 500;
   font-style: normal italic;
   font-display: swap;
@@ -11,8 +12,18 @@
 
 @font-face {
   font-family: "Barlow_Condensed";
-  src: url("/src/assets/fonts/Barlow_Condensed/BarlowCondensed-VariableFont_wght.woff2") format("woff2-variations");
+  src: url("/src/assets/fonts/Barlow_Condensed/BarlowCondensed-VariableFont_wght.woff2")
+    format("woff2-variations");
   font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
+    format("woff2-variations");
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -27,17 +38,8 @@
   --nav-height: 3.5rem;
 }
 
-a {
-  font-weight: 500;
-  color: var(--link-color-default);
-  text-decoration: inherit;
-}
-a:hover {
-  color: var(--link-color-hover);
-}
-
 body {
-  margin: 0;
+  @apply font-primary;
 }
 
 h1 {
@@ -52,4 +54,12 @@ section {
 }
 p {
   @apply mb-4 leading-relaxed;
+}
+
+.link {
+  @apply text-accent hover:text-accent-hover;
+}
+
+.link-active {
+  @apply text-accent-active underline underline-offset-2;
 }
