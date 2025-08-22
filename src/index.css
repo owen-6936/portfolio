@@ -63,3 +63,11 @@ p {
 .link-active {
   @apply text-accent-active underline underline-offset-2;
 }
+
+.sidebar-link {
+  @apply rounded-2xl p-2 text-accent hover:bg-accent hover:text-white;
+}
+
+.sidebar-link-active {
+  @apply text-gray-600 font-bold rounded-2xl p-2;
+}

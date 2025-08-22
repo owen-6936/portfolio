@@ -42,7 +42,7 @@ export default function Navbar() {
         {/* Hamburger */}
         <button
           onClick={() => setIsOpen(true)}
-          className="md:hidden p-2 focus:outline-none"
+          className="md:hidden p-2 focus:outline-none cursor-pointer"
           aria-label="Open menu"
         >
           <svg
@@ -62,7 +62,11 @@ export default function Navbar() {
       </div>
 
       {/* Sidebar Menu */}
-      <SidebarMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      <SidebarMenu
+        activeNavItem={activeNavItem}
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+      />
     </header>
   );
 }

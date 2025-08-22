@@ -6,9 +6,11 @@ import { X } from "lucide-react";
 export default function SidebarMenu({
   isOpen,
   onClose,
+  activeNavItem,
 }: {
   isOpen: boolean;
   onClose: () => void;
+  activeNavItem: string;
 }) {
   return (
     <AnimatePresence>
@@ -38,7 +40,15 @@ export default function SidebarMenu({
             <hr className="text-gray-500 mt-0 mb-6" />
 
             {links.map((link) => (
-              <Link key={link.key} to={link.url} className="text-accent">
+              <Link
+                key={link.key}
+                to={link.url}
+                className={`${
+                  activeNavItem === link.key
+                    ? "sidebar-link-active"
+                    : "sidebar-link"
+                }`}
+              >
                 {link.title}
               </Link>
             ))}
