@@ -12,9 +12,9 @@
 
 @font-face {
   font-family: "Barlow_Condensed";
-  src: url("/src/assets/fonts/Barlow_Condensed/BarlowCondensed-VariableFont_wght.woff2")
+  src: url("/src/assets/fonts/Barlow_Condensed/barlowcondensed-bold-webfont.woff2")
     format("woff2-variations");
-  font-weight: 100 700;
+  font-weight: 100 600;
   font-style: normal;
   font-display: swap;
 }
@@ -45,12 +45,6 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-section {
-  border-radius: 20px;
-  margin: 2rem auto;
-  width: calc(100% - 2.5rem);
 }
 p {
   @apply mb-4 leading-relaxed;

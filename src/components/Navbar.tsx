@@ -19,7 +19,7 @@ export default function Navbar() {
   }, [location.pathname]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-gray-100 shadow-md h-[var(--nav-height)]">
+    <header className="sticky top-0 left-0 w-full z-50 bg-gray-100 shadow-md h-[var(--nav-height)]">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-logo font-bold">Owen Erhabor</div>

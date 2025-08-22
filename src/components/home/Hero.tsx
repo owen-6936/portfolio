@@ -15,7 +15,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <Card>
+    <Card className="m-4" padding="">
+      <Card.Header
+        className="introduction"
+        title="Welcome To My Portfolio: An introduction"
+        align="center"
+      />
       <section className="hero">
         <motion.figure
           className="hero-image"

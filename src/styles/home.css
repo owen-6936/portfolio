@@ -10,6 +10,10 @@
     align-items: center;
 } */
 
+.introduction {
+  @apply text-[30px] leading-[0.8] font-bold text-primary font-heading mx-auto mb-6 mt-3;
+}
+
 .hero {
   @apply p-0 flex flex-col items-center justify-evenly gap-4;
   @apply lg:px-2 lg:flex-row lg:justify-around lg:items-start;
