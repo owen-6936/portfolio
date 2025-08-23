@@ -14,6 +14,9 @@ const skills: Skills[] = [
   { id: 7, name: "MongoDB", level: "intermediate" },
   { id: 8, name: "Tailwind CSS", level: "advanced" },
   { id: 9, name: "Framer Motion", level: "intermediate" },
+  { id: 10, name: "Socket.IO", level: "intermediate" },
+  { id: 11, name: "Git", level: "advanced" },
+  { id: 12, name: "C++", level: "beginner" },
 ];
 
 export default skills;

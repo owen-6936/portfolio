@@ -2,6 +2,7 @@ import Hero from "./home/Hero";
 import Skills from "./home/Skills";
 import "../styles/home.css";
 import Card from "./Card";
+import TopProjects from "./home/TopProjects";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         />
         <Hero />
         <Skills />
+        <TopProjects />
       </Card>
     </div>
   );

@@ -4,11 +4,29 @@ import { cn } from "../utils/utils";
 
 // Define the component's props interface for better type-checking with TypeScript.
 interface ButtonProps {
-  variant?: "default" | "outline" | "ghost" | "gradient" | "classic";
+  variant?:
+    | "default"
+    | "outline"
+    | "ghost"
+    | "gradient"
+    | "classic"
+    | "classicv2";
   size?: "sm" | "md" | "lg";
   children: React.ReactNode;
   onClick?: () => void;
   className?: string;
+  rounded?: "none" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "full";
+}
+
+enum ButtonRounded {
+  none = "rounded-none",
+  sm = "rounded-sm",
+  md = "rounded-md",
+  lg = "rounded-lg",
+  xl = "rounded-xl",
+  "2xl" = "rounded-2xl",
+  "3xl" = "rounded-3xl",
+  full = "rounded-full",
 }
 
 // The main Button component.
@@ -18,10 +36,10 @@ const Button = ({
   children,
   onClick,
   className = "",
+  rounded = "md",
 }: ButtonProps) => {
   // Base styling for all buttons.
-  const baseStyles =
-    "inline-flex items-center justify-center rounded-lg gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 cursor-pointer text-lg sm:text-xl";
+  const baseStyles = `inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 cursor-pointer text-lg sm:text-xl ${ButtonRounded[rounded]}`;
 
   // Styling based on the 'variant' prop.
   const variantStyles = {
@@ -32,8 +50,7 @@ const Button = ({
     gradient:
       "bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700",
     classic: "bg-white/10 text-white border border-white/20 hover:bg-white/20",
-    classicv2:
-      "bg-white/20 text-white border border-white/30 hover:bg-white/30",
+    classicv2: "bg-accent btn-box-shadow text-white hover:bg-accent-hover",
   };
 
   // Styling based on the 'size' prop.

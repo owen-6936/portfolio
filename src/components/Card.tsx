@@ -94,9 +94,7 @@ const CardHeader: React.FC<CardHeaderProps> = ({
 
 // Sub-component for the card body
 const CardBody: React.FC<CardSectionProps> = ({ children, className }) => (
-  <div className={cn("text-blue-200 text-sm md:text-base", className ?? "")}>
-    {children}
-  </div>
+  <div className={cn("text-sm md:text-base", className ?? "")}>{children}</div>
 );
 
 // Sub-component for the card footer

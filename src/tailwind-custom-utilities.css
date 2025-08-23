@@ -18,6 +18,9 @@
 @utility bg-accent {
   background-color: #5c859b;
 }
+@utility bg-accent-hover {
+  background-color: #4a6f83;
+}
 @utility text-neutral {
   color: #666666;
 }
@@ -76,4 +79,8 @@
 
 @utility box-shadow {
   box-shadow: 0 0 0px 3.5px rgba(0, 0, 0, 0.4);
+}
+
+@utility btn-box-shadow {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
