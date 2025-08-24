@@ -16,7 +16,7 @@ export default function Navbar() {
 
   useEffect(() => {
     handleLocationChange();
-  }, [location.pathname]);
+  }, []);
 
   return (
     <header className="sticky top-0 left-0 w-full z-50 bg-gray-100 shadow-md h-[var(--nav-height)]">

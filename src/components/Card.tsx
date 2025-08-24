@@ -75,7 +75,7 @@ const CardHeader: React.FC<CardHeaderProps> = ({
       {icon && <div className="w-5 h-5 mb-0.5 text-blue-400">{icon}</div>}
       <h2
         className={cn(
-          "text-3xl font-bold mb-1 w-full",
+          "text-3xl sm:text-4xl lg:text-5xl font-bold mb-1 w-full",
           gradient
             ? "bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text"
             : ""

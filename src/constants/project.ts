@@ -1,3 +1,5 @@
+import linkify from "../assets/images/linkify/linkify-512x512.png";
+
 interface Project {
   id: number;
   name: string;
@@ -22,7 +24,7 @@ export const topProjects: Project[] = [
       "CSS",
       "Cloudflare",
     ],
-    imageUrl: "",
+    imageUrl: linkify,
     liveUrl: "https://lnkfy.cfd",
     githubUrl: "https://github.com/owen-6936/linkify",
   },

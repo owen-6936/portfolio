@@ -23,7 +23,7 @@
   background-image: url("/src/assets/images/competent_owen_placeholder.webp");
   background-position: center;
   background-size: cover;
-  @apply blur-[0%] rounded-2xl w-full max-w-[415px] mx-auto relative;
+  @apply blur-[0%] rounded-2xl w-full min-w-[320px] max-w-[415px] m-auto relative;
 }
 
 .hero-image img {
@@ -41,7 +41,7 @@
 }
 
 .hero-details {
-  @apply p-4 min-w-[375px] max-w-[435px] sm:max-w-full;
+  @apply sm:p-4 pt-2 lg:pt-8 sm:min-w-[375px] max-w-[435px] sm:max-w-full sm:text-lg;
   @apply lg:max-w-full;
 }
 
@@ -49,6 +49,9 @@
   @apply text-5xl leading-[0.8] font-bold text-primary font-logo mr-1 float-left;
 }
 
+.hero-secondary-details {
+  @apply flex flex-col space-y-6 md:space-y-0 md:space-x-8 md:flex-row mt-2 sm:mt-0 lg:mt-6 mb-8 p-4 pb-2 bg-gray-100 rounded-2xl shadow-lg;
+}
 .hero-details-links {
   @apply flex flex-col gap-2 py-4;
   @apply lg:py-2 lg:gap-0;
@@ -70,6 +73,7 @@
 .skill {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   @apply bg-white/50 text-primary p-[0.7rem_1.2rem] font-medium uppercase leading-2 whitespace-nowrap transition transform duration-200 ease-in-out rounded-3xl cursor-pointer;
+  @apply sm:text-lg sm:p-[0.9rem_1.4rem];
 }
 
 .skill:nth-child(even) {
@@ -77,6 +81,29 @@
 }
 
 .skill:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  @apply transform -translate-y-0.5;
+}
+
+/* PROJECTS SECTION */
+
+.project-list {
+  @apply p-0 m-0 flex flex-wrap justify-center gap-4;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.project {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  @apply bg-white/50 text-primary p-[0.7rem_1.2rem] font-medium uppercase leading-2 whitespace-nowrap transition transform duration-200 ease-in-out rounded-3xl cursor-pointer;
+}
+
+.project:nth-child(even) {
+  @apply bg-dark text-white font-medium;
+}
+
+.project:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   @apply transform -translate-y-0.5;
 }

@@ -14,50 +14,61 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero">
-      <motion.figure
-        className="hero-image"
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        <img
-          src={heroImage}
-          alt="Professional headshot of Owen Erhabor, aspiring full-stack developer"
-          height="375"
-          loading="lazy"
-          className={`${imageLoaded ? "loaded" : ""}`}
-        />
-      </motion.figure>
+    <>
+      <section className="hero">
+        <motion.figure
+          className="hero-image"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <img
+            src={heroImage}
+            alt="Professional headshot of Owen Erhabor, aspiring full-stack developer"
+            height="375"
+            loading="lazy"
+            decoding="async"
+            className={`${imageLoaded ? "loaded" : ""}`}
+          />
+        </motion.figure>
 
+        <motion.div
+          className="hero-details"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+        >
+          <p>
+            Hello, I'm Owen, a very dedicated and algorithmically minded
+            developer on the path to becoming a full-stack expert. My enthusiasm
+            lies in crafting efficient, flexible and scalable solutions,
+            particularly with JavaScript and its libraries/frameworks.
+          </p>
+          <p>
+            My approach to problem-solving is fundamentally algorithmic and
+            logical. I believe even the most complex challenges can be broken
+            down into simpler steps or thoughtful combinations. This mindset
+            helps me design elegant, optimized, and maintainable architectures.
+            I genuinely enjoy designing code—and that’s why I love TypeScript.
+          </p>
+          <p>
+            Explore my work to see how my algorithmic thinking brings innovative
+            solutions to life, or{" "}
+            <Link to="/about" className="link">
+              learn more about my journey and expertise on my About Me page.
+            </Link>
+          </p>
+        </motion.div>
+      </section>
       <motion.div
-        className="hero-details"
+        className="hero-secondary-details"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
       >
-        <p>
-          Hello, I'm Owen, a very dedicated and algorithmically minded developer
-          on the path to becoming a full-stack expert. My enthusiasm lies in
-          crafting efficient, flexible and scalable solutions, particularly with
-          JavaScript and its libraries/frameworks.
-        </p>
-        <p>
-          My approach to problem-solving is fundamentally algorithmic and
-          logical. I believe even the most complex challenges can be broken down
-          into simpler steps or thoughtful combinations. This mindset helps me
-          design elegant, optimized, and maintainable architectures. I genuinely
-          enjoy designing code—and that’s why I love TypeScript.
-        </p>
-        <p>
-          Explore my work to see how my algorithmic thinking brings innovative
-          solutions to life, or{" "}
-          <Link to="/about" className="link">
-            learn more about my journey and expertise on my About Me page.
-          </Link>
-        </p>
         <div className="hero-details-links">
           <motion.div
             className="hero-details-link"
@@ -89,7 +100,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </motion.div>
-    </section>
+    </>
   );
 };
 

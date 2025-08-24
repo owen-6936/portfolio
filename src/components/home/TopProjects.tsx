@@ -2,22 +2,43 @@ import { Link } from "react-router-dom";
 import { topProjects } from "../../constants/project";
 import Card from "../Card";
 import Button from "../Button";
+import ImageContainer from "../ImageContainer";
+import { generateGradientPlaceholder } from "../../utils/GradientImagePlaceholder";
 
 const TopProjects = () => {
   return (
-    <Card className="top-projects">
+    <Card padding="p-0" className="mt-10 my-4">
       <Card.Header title="Top Projects" />
-      <Card.Body>
+      <Card.Body className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {topProjects.map((project) => (
-          <Card className="m-4 border-2 border-gray-500 " key={project.id}>
+          <Card
+            className="sm:m-4 border-2 border-gray-500"
+            key={project.id}
+            padding="p-6"
+          >
             <Card.Header title={project.name} />
             <Card.Body>
-              <p>{project.description}</p>
-              <div className="flex justify-between gap-4 mx-auto">
+              <ImageContainer
+                src={
+                  project.imageUrl && project.imageUrl !== ""
+                    ? project.imageUrl
+                    : generateGradientPlaceholder({
+                        text: project.name,
+                        width: 150,
+                        height: 150,
+                      })
+                }
+                alt={project.name}
+                figureClassName="w-full h-full min-h-[300px] max-h-[300px] mb-4"
+                width={600}
+                height={600}
+              />
+              <p className="sm:text-lg">{project.description}</p>
+              <div className="flex justify-between gap-4 mx-auto lg:w-[80%]">
                 <Button
                   variant="classicv2"
                   size="sm"
-                  className="mt-4 px-6 py-5.5"
+                  className="px-6 py-5.5"
                   rounded="3xl"
                 >
                   <Link to={project.liveUrl || "#"} className="project-link">
@@ -27,7 +48,7 @@ const TopProjects = () => {
                 <Button
                   variant="classicv2"
                   size="sm"
-                  className="mt-4 px-6 py-5.5"
+                  className="px-6 py-5.5"
                   rounded="3xl"
                 >
                   <Link to={project.githubUrl || "#"} className="project-link">
