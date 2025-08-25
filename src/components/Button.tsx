@@ -1,63 +1,63 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { cn } from "../utils/utils";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { cn } from '../utils/utils';
 
 // Define the component's props interface for better type-checking with TypeScript.
 interface ButtonProps {
   variant?:
-    | "default"
-    | "outline"
-    | "ghost"
-    | "gradient"
-    | "classic"
-    | "classicv2";
-  size?: "sm" | "md" | "lg";
+    | 'default'
+    | 'outline'
+    | 'ghost'
+    | 'gradient'
+    | 'classic'
+    | 'classicv2';
+  size?: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
   onClick?: () => void;
   className?: string;
-  rounded?: "none" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "full";
+  rounded?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full';
 }
 
 enum ButtonRounded {
-  none = "rounded-none",
-  sm = "rounded-sm",
-  md = "rounded-md",
-  lg = "rounded-lg",
-  xl = "rounded-xl",
-  "2xl" = "rounded-2xl",
-  "3xl" = "rounded-3xl",
-  full = "rounded-full",
+  none = 'rounded-none',
+  sm = 'rounded-sm',
+  md = 'rounded-md',
+  lg = 'rounded-lg',
+  xl = 'rounded-xl',
+  '2xl' = 'rounded-2xl',
+  '3xl' = 'rounded-3xl',
+  full = 'rounded-full',
 }
 
 // The main Button component.
 const Button = ({
-  variant = "default",
-  size = "md",
+  variant = 'default',
+  size = 'md',
   children,
   onClick,
-  className = "",
-  rounded = "md",
+  className = '',
+  rounded = 'md',
 }: ButtonProps) => {
   // Base styling for all buttons.
   const baseStyles = `inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 cursor-pointer text-lg sm:text-xl ${ButtonRounded[rounded]}`;
 
   // Styling based on the 'variant' prop.
   const variantStyles = {
-    default: "bg-blue-600 text-white hover:bg-blue-700",
+    default: 'bg-blue-600 text-white hover:bg-blue-700',
     outline:
-      "bg-transparent text-blue-600 border border-blue-600 hover:bg-blue-100",
-    ghost: "bg-transparent text-blue-600 hover:bg-blue-100",
+      'bg-transparent text-blue-600 border border-blue-600 hover:bg-blue-100',
+    ghost: 'bg-transparent text-blue-600 hover:bg-blue-100',
     gradient:
-      "bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700",
-    classic: "bg-white/10 text-white border border-white/20 hover:bg-white/20",
-    classicv2: "bg-accent btn-box-shadow text-white hover:bg-accent-hover",
+      'bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700',
+    classic: 'bg-white/10 text-white border border-white/20 hover:bg-white/20',
+    classicv2: 'bg-accent btn-box-shadow text-white hover:bg-accent-hover',
   };
 
   // Styling based on the 'size' prop.
   const sizeStyles = {
-    sm: "h-8 px-3 text-sm",
-    md: "h-10 px-4 text-sm",
-    lg: "h-12 px-6 text-base",
+    sm: 'h-8 px-3 text-sm',
+    md: 'h-10 px-4 text-sm',
+    lg: 'h-12 px-6 text-base',
   };
 
   return (
@@ -67,7 +67,7 @@ const Button = ({
       whileTap={{ scale: 0.97, y: 1 }}
       initial={{ opacity: 0, y: -4 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.15, ease: "easeOut" }}
+      transition={{ duration: 0.15, ease: 'easeOut' }}
       className={cn(
         baseStyles,
         variantStyles[variant],

@@ -1,5 +1,5 @@
-import type { JSX } from "react";
-import { Link, type LinkProps } from "react-router-dom";
+import type { JSX } from 'react';
+import { Link, type LinkProps } from 'react-router-dom';
 export default function CustomLink({
   children,
   ...props

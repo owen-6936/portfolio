@@ -1,5 +1,5 @@
-import skills from "../../constants/skills";
-import Card from "../Card";
+import skills from '../../constants/skills';
+import Card from '../Card';
 
 const Hero = () => {
   return (

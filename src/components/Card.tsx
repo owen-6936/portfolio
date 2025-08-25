@@ -1,7 +1,7 @@
-import { motion, type Variants } from "framer-motion";
-import { cn } from "../utils/utils";
-import type { ReactNode } from "react";
-import { defaultVariants } from "../constants/variant";
+import { motion, type Variants } from 'framer-motion';
+import { cn } from '../utils/utils';
+import type { ReactNode } from 'react';
+import { defaultVariants } from '../constants/variant';
 // Define the props for the main Card container
 interface CardProps {
   children: React.ReactNode;
@@ -19,7 +19,7 @@ interface CardHeaderProps {
   title: string;
   icon?: ReactNode;
   subtitle?: string;
-  align?: "left" | "center" | "right";
+  align?: 'left' | 'center' | 'right';
   gradient?: boolean;
   className?: string;
 }
@@ -30,9 +30,9 @@ interface CardSectionProps {
 }
 
 const alignment = {
-  left: "text-left",
-  center: "text-center",
-  right: "text-right",
+  left: 'text-left',
+  center: 'text-center',
+  right: 'text-right',
 };
 
 // The main reusable Card component.
@@ -43,19 +43,19 @@ const Card: React.FC<CardProps> & {
 } = ({
   children,
   index,
-  bg = "bg-white/10",
-  padding = "px-8 py-7",
+  bg = 'bg-white/10',
+  padding = 'px-8 py-7',
   amount = 0.2,
   className,
   cardVariants = defaultVariants[(index ?? 0) % defaultVariants.length],
 }) => {
   return (
     <motion.div
-      className={cn(`${bg} rounded-2xl ${padding}`, className ?? "")}
+      className={cn(`${bg} rounded-2xl ${padding}`, className ?? '')}
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: amount, margin: "0px" }}
+      viewport={{ once: true, amount: amount, margin: '0px' }}
       transition={{ delay: 0.2 + (index || 0) * 0.1, duration: 0.4 }}
     >
       {children}
@@ -68,26 +68,26 @@ const CardHeader: React.FC<CardHeaderProps> = ({
   title,
   icon,
   subtitle,
-  align = "left",
+  align = 'left',
   gradient = false,
-  className = "",
+  className = '',
 }) => (
-  <div className={cn("mb-4", className)}>
+  <div className={cn('mb-4', className)}>
     <div className={`flex items-center gap-2 ${alignment[align]}`}>
       {icon && <div className="w-5 h-5 mb-0.5 text-blue-400">{icon}</div>}
       <h2
         className={cn(
-          "text-3xl sm:text-4xl lg:text-5xl font-bold mb-1 w-full",
+          'text-3xl sm:text-4xl lg:text-5xl font-bold mb-1 w-full',
           gradient
-            ? "bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text"
-            : ""
+            ? 'bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text'
+            : ''
         )}
       >
         {title}
       </h2>
     </div>
     {subtitle && (
-      <p className={cn("text-sm text-gray-300 mt-1", alignment[align])}>
+      <p className={cn('text-sm text-gray-300 mt-1', alignment[align])}>
         {subtitle}
       </p>
     )}
@@ -96,15 +96,15 @@ const CardHeader: React.FC<CardHeaderProps> = ({
 
 // Sub-component for the card body
 const CardBody: React.FC<CardSectionProps> = ({ children, className }) => (
-  <div className={cn("text-sm md:text-base", className ?? "")}>{children}</div>
+  <div className={cn('text-sm md:text-base', className ?? '')}>{children}</div>
 );
 
 // Sub-component for the card footer
 const CardFooter: React.FC<CardSectionProps> = ({ children, className }) => (
   <div
     className={cn(
-      "mt-4 pt-2 border-t border-white/10 text-xs text-blue-300",
-      className ?? ""
+      'mt-4 pt-2 border-t border-white/10 text-xs text-blue-300',
+      className ?? ''
     )}
   >
     {children}

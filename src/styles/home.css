@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "../tailwind-custom-utilities.css";
+@import 'tailwindcss';
+@import '../tailwind-custom-utilities.css';
 
 /* #hero {
     border: none;
@@ -20,7 +20,7 @@
 }
 
 .hero-image {
-  background-image: url("/src/assets/images/competent_owen_placeholder.webp");
+  background-image: url('/src/assets/images/competent_owen_placeholder.webp');
   background-position: center;
   background-size: cover;
   @apply blur-[0%] rounded-2xl w-full min-w-[320px] max-w-[415px] relative;
@@ -36,7 +36,7 @@
 
 .hero-image::after {
   box-shadow: inset 3px 3px 10px 0 #000;
-  content: "";
+  content: '';
   @apply absolute top-0 rounded-2xl w-full h-full;
 }
 

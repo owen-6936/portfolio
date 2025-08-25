@@ -42,39 +42,39 @@ To get a local copy up and running, follow these simple steps:
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone [https://github.com/owen-6936/portfolio.git](https://github.com/owen-6936/portfolio.git)
-    ```
+   ```bash
+   git clone [https://github.com/owen-6936/portfolio.git](https://github.com/owen-6936/portfolio.git)
+   ```
 
 2. **Navigate to the project directory:**
 
-    ```bash
-    cd portfolio
-    ```
+   ```bash
+   cd portfolio
+   ```
 
 3. **Install dependencies:**
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
-    or
+   or
 
-    ```bash
-    yarn install
-    ```
+   ```bash
+   yarn install
+   ```
 
 4. **Start the development server:**
 
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
-    or
+   or
 
-    ```bash
-    yarn start
-    ```
+   ```bash
+   yarn start
+   ```
 
 ## Usage
 

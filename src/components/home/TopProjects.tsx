@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import { topProjects } from "../../constants/project";
-import Card from "../Card";
-import Button from "../Button";
-import ImageContainer from "../ImageContainer";
-import { generateGradientPlaceholder } from "../../utils/GradientImagePlaceholder";
+import { Link } from 'react-router-dom';
+import { topProjects } from '../../constants/project';
+import Card from '../Card';
+import Button from '../Button';
+import ImageContainer from '../ImageContainer';
+import { generateGradientPlaceholder } from '../../utils/GradientImagePlaceholder';
 
 const TopProjects = () => {
   return (
@@ -20,7 +20,7 @@ const TopProjects = () => {
             <Card.Body>
               <ImageContainer
                 src={
-                  project.imageUrl && project.imageUrl !== ""
+                  project.imageUrl && project.imageUrl !== ''
                     ? project.imageUrl
                     : generateGradientPlaceholder({
                         text: project.name,
@@ -41,7 +41,7 @@ const TopProjects = () => {
                   className="px-6 py-5.5"
                   rounded="3xl"
                 >
-                  <Link to={project.liveUrl || "#"} className="project-link">
+                  <Link to={project.liveUrl || '#'} className="project-link">
                     Live Demo
                   </Link>
                 </Button>
@@ -51,7 +51,7 @@ const TopProjects = () => {
                   className="px-6 py-5.5"
                   rounded="3xl"
                 >
-                  <Link to={project.githubUrl || "#"} className="project-link">
+                  <Link to={project.githubUrl || '#'} className="project-link">
                     Github
                   </Link>
                 </Button>

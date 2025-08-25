@@ -1,4 +1,4 @@
-import type { Variants } from "framer-motion";
+import type { Variants } from 'framer-motion';
 export const defaultVariants: Variants[] = [
   {
     hidden: { opacity: 0, y: 20 },

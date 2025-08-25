@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-type Fit = "cover" | "contain" | "fill" | "none" | "scale-down";
+type Fit = 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
 
 interface ImageContainerProps
   extends React.ImgHTMLAttributes<HTMLImageElement> {
@@ -16,9 +16,9 @@ const ImageContainer: React.FC<ImageContainerProps> = ({
   src,
   alt,
   caption,
-  figureClassName = "",
-  imgClassName = "",
-  fit = "cover",
+  figureClassName = '',
+  imgClassName = '',
+  fit = 'cover',
   ...imgProps
 }) => {
   return (

@@ -21,9 +21,9 @@ const generateGradientDef = (
   useRadial: boolean
 ): string => {
   const stops = (() => {
-    if (width > 300 || height > 300) return ["#e0eafc", "#cfdef3", "#c3cfe2"];
-    if (hasText) return ["#fdfbfb", "#ebedee", "#d6d8db"];
-    return ["#f6f8f9", "#dde3e9", "#cbd5e1"];
+    if (width > 300 || height > 300) return ['#e0eafc', '#cfdef3', '#c3cfe2'];
+    if (hasText) return ['#fdfbfb', '#ebedee', '#d6d8db'];
+    return ['#f6f8f9', '#dde3e9', '#cbd5e1'];
   })();
 
   const stopElements = stops
@@ -31,7 +31,7 @@ const generateGradientDef = (
       const offset = (i / (stops.length - 1)) * 100;
       return `<stop offset="${offset}%" style="stop-color:${color};stop-opacity:1" />`;
     })
-    .join("");
+    .join('');
 
   return useRadial
     ? `<radialGradient id="${id}" cx="50%" cy="50%" r="80%" fx="50%" fy="50%">${stopElements}</radialGradient>`
@@ -43,15 +43,15 @@ const generateGradientDef = (
  */
 const wrapText = (str: string, maxChars: number): string[] => {
   const lines: string[] = [];
-  const words = str.split(" ");
-  let currentLine = "";
+  const words = str.split(' ');
+  let currentLine = '';
 
   words.forEach((word) => {
     if (currentLine.length + word.length + 1 > maxChars) {
       lines.push(currentLine.trim());
-      currentLine = word + " ";
+      currentLine = word + ' ';
     } else {
-      currentLine += word + " ";
+      currentLine += word + ' ';
     }
   });
 
@@ -65,7 +65,7 @@ const wrapText = (str: string, maxChars: number): string[] => {
 export const generateGradientPlaceholder = ({
   width = 100,
   height = 100,
-  text = "",
+  text = '',
   useRadial = false,
 }: GradientPlaceholderOptions): string => {
   const fontFamily = "'Inter', sans-serif";
@@ -80,9 +80,9 @@ export const generateGradientPlaceholder = ({
       const dy = index === 0 ? 0 : lineHeight;
       return `<tspan x="50%" dy="${dy}">${line}</tspan>`;
     })
-    .join("");
+    .join('');
 
-  const gradientId = "g";
+  const gradientId = 'g';
   const gradientDef = generateGradientDef(
     gradientId,
     width,
@@ -106,7 +106,7 @@ export const generateGradientPlaceholder = ({
       font-size="10"
       font-weight="500"
     >${textElements}</text>`
-        : ""
+        : ''
     }
   </svg>`;
 

@@ -1,6 +1,6 @@
-import { Outlet } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import { motion, AnimatePresence } from "framer-motion";
+import { Outlet } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function RootLayout() {
   return (

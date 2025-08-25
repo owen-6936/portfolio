@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
-import heroImage from "../../assets/images/competent_owen.webp";
-import locationIcon from "../../assets/icons/google-maps.png";
-import checkIcon from "../../assets/icons/checked.png";
-import { useEffect, useState } from "react";
-import Link from "../CustomLink";
+import { motion } from 'framer-motion';
+import heroImage from '../../assets/images/competent_owen.webp';
+import locationIcon from '../../assets/icons/google-maps.png';
+import checkIcon from '../../assets/icons/checked.png';
+import { useEffect, useState } from 'react';
+import Link from '../CustomLink';
 
 const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -23,7 +23,7 @@ const Hero = () => {
             height="375"
             loading="lazy"
             decoding="async"
-            className={`${imageLoaded ? "loaded" : ""}`}
+            className={`${imageLoaded ? 'loaded' : ''}`}
           />
         </motion.figure>
 
@@ -32,7 +32,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
         >
           <p>
             Hello, I'm Owen, a very dedicated and algorithmically minded
@@ -49,7 +49,7 @@ const Hero = () => {
           </p>
           <p>
             Explore my work to see how my algorithmic thinking brings innovative
-            solutions to life, or{" "}
+            solutions to life, or{' '}
             <Link to="/about" className="link">
               learn more about my journey and expertise on my About Me page.
             </Link>
@@ -61,7 +61,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
+        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
       >
         <div className="hero-details-links">
           <motion.div
@@ -69,7 +69,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
           >
             <img
               src={locationIcon}
@@ -83,7 +83,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
           >
             <img
               src={checkIcon}

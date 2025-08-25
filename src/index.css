@@ -1,28 +1,28 @@
-@import "tailwindcss";
-@import "./tailwind-custom-utilities.css";
+@import 'tailwindcss';
+@import './tailwind-custom-utilities.css';
 
 @font-face {
-  font-family: "Dancing_Script";
-  src: url("/src/assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.woff2")
-    format("woff2-variations");
+  font-family: 'Dancing_Script';
+  src: url('/src/assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.woff2')
+    format('woff2-variations');
   font-weight: 100 500;
   font-style: normal italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Barlow_Condensed";
-  src: url("/src/assets/fonts/Barlow_Condensed/barlowcondensed-bold-webfont.woff2")
-    format("woff2-variations");
+  font-family: 'Barlow_Condensed';
+  src: url('/src/assets/fonts/Barlow_Condensed/barlowcondensed-bold-webfont.woff2')
+    format('woff2-variations');
   font-weight: 100 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("/src/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
-    format("woff2-variations");
+  font-family: 'Inter';
+  src: url('/src/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf')
+    format('woff2-variations');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -33,7 +33,7 @@
 }
 
 :root {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   --side-bar-width: 320px;
   --nav-height: 3.5rem;
 }

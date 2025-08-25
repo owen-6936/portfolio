@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
-import SidebarMenu from "./SidebarMenu";
-import Link from "./CustomLink";
-import links from "../constants/links";
+import { useEffect, useState } from 'react';
+import SidebarMenu from './SidebarMenu';
+import Link from './CustomLink';
+import links from '../constants/links';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const [activeNavItem, setActiveNavItem] = useState("");
+  const [activeNavItem, setActiveNavItem] = useState('');
 
   const handleLocationChange = () => {
     const currentPath = location.pathname;
     const activeLink = links.find((link) => link.url === currentPath);
-    setActiveNavItem(activeLink ? String(activeLink.key) : "");
+    setActiveNavItem(activeLink ? String(activeLink.key) : '');
   };
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function Navbar() {
               key={link.key}
               to={link.url}
               className={`${
-                activeNavItem === link.key ? "link-active" : "link"
+                activeNavItem === link.key ? 'link-active' : 'link'
               }`}
             >
               {link.title}

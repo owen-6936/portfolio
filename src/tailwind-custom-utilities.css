@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* stylelint-disable
   at-rule-no-unknown
@@ -59,16 +59,16 @@
   color: #2a2f31;
 }
 @utility font-primary {
-  font-family: "Inter", "sans-serif";
+  font-family: 'Inter', 'sans-serif';
 }
 @utility font-logo {
-  font-family: "Dancing_Script", "Montserrat", "serif";
+  font-family: 'Dancing_Script', 'Montserrat', 'serif';
 }
 @utility font-heading {
-  font-family: "Barlow_Condensed", "Montserrat", "sans-serif";
+  font-family: 'Barlow_Condensed', 'Montserrat', 'sans-serif';
 }
 @utility font-code {
-  font-family: "Fira Code", "monospace";
+  font-family: 'Fira Code', 'monospace';
 }
 @utility sidebar {
   width: var(--my-spacing-sidebar);

@@ -1,7 +1,7 @@
-import { motion, AnimatePresence } from "framer-motion";
-import Link from "./CustomLink";
-import links from "../constants/links";
-import { X } from "lucide-react";
+import { motion, AnimatePresence } from 'framer-motion';
+import Link from './CustomLink';
+import links from '../constants/links';
+import { X } from 'lucide-react';
 
 export default function SidebarMenu({
   isOpen,
@@ -31,7 +31,7 @@ export default function SidebarMenu({
             initial={{ x: 320 }}
             animate={{ x: 0 }}
             exit={{ x: 320 }}
-            transition={{ type: "tween", duration: 0.3 }}
+            transition={{ type: 'tween', duration: 0.3 }}
           >
             <X
               onClick={onClose}
@@ -45,8 +45,8 @@ export default function SidebarMenu({
                 to={link.url}
                 className={`${
                   activeNavItem === link.key
-                    ? "sidebar-link-active"
-                    : "sidebar-link"
+                    ? 'sidebar-link-active'
+                    : 'sidebar-link'
                 }`}
               >
                 {link.title}
