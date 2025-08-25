@@ -7,7 +7,7 @@ import { generateGradientPlaceholder } from "../../utils/GradientImagePlaceholde
 
 const TopProjects = () => {
   return (
-    <Card padding="p-0" className="mt-10 my-4">
+    <Card amount={0.1} padding="p-0" className="mt-10 my-4">
       <Card.Header title="Top Projects" />
       <Card.Body className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {topProjects.map((project) => (

@@ -11,6 +11,7 @@ interface CardProps {
   padding?: string;
   // Allows the user to provide custom animation variants
   cardVariants?: Variants;
+  amount?: number;
 }
 
 // Define the props for the card header
@@ -44,6 +45,7 @@ const Card: React.FC<CardProps> & {
   index,
   bg = "bg-white/10",
   padding = "px-8 py-7",
+  amount = 0.2,
   className,
   cardVariants = defaultVariants[(index ?? 0) % defaultVariants.length],
 }) => {
@@ -53,7 +55,7 @@ const Card: React.FC<CardProps> & {
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2, margin: "0px" }}
+      viewport={{ once: true, amount: amount, margin: "0px" }}
       transition={{ delay: 0.2 + (index || 0) * 0.1, duration: 0.4 }}
     >
       {children}

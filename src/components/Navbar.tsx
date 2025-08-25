@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="text-2xl font-logo font-bold">Owen Erhabor</div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-6 lg:space-x-12">
           {links.map((link) => (
             <Link
               key={link.key}
