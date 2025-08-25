@@ -16,13 +16,7 @@ const Hero = () => {
   return (
     <>
       <section className="hero">
-        <motion.figure
-          className="hero-image"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
+        <motion.figure className="hero-image">
           <img
             src={heroImage}
             alt="Professional headshot of Owen Erhabor, aspiring full-stack developer"
