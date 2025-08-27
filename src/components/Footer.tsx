@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-neutral p-8 text-center flex flex-col justify-evenly gap-1.5 w-full tracking-wide">
       <div className="flex justify-center items-center gap-4 flex-wrap">
         {links.map((link, index) => (
-          <span className="link text-sm sm:text-base">
+          <span key={link.key} className="link text-sm sm:text-base">
             <Link key={link.key} to={link.url}>
               {link.title}
             </Link>

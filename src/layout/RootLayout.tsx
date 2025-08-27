@@ -8,7 +8,7 @@ export default function RootLayout() {
     <div>
       <Navbar />
       <main>
-        <AnimatePresence mode="sync">
+        <AnimatePresence mode="sync" initial={false}>
           <motion.div
             key={location.pathname}
             initial={{ opacity: 0, y: 20 }}

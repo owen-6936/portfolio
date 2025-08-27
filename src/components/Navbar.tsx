@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import SidebarMenu from './SidebarMenu';
 import Link from './CustomLink';
 import links from '../constants/links';
@@ -8,6 +9,8 @@ export default function Navbar() {
 
   const [activeNavItem, setActiveNavItem] = useState('');
 
+  const location = useLocation();
+
   const handleLocationChange = () => {
     const currentPath = location.pathname;
     const activeLink = links.find((link) => link.url === currentPath);
@@ -16,7 +19,8 @@ export default function Navbar() {
 
   useEffect(() => {
     handleLocationChange();
-  }, []);
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <header className="sticky top-0 left-0 w-full z-50 bg-gray-100 shadow-md h-[var(--nav-height)]">

@@ -23,7 +23,7 @@
   background-image: url('/src/assets/images/competent_owen_placeholder.webp');
   background-position: center;
   background-size: cover;
-  @apply blur-[0%] rounded-2xl w-full min-w-[320px] max-w-[415px] relative;
+  @apply blur-[0%] rounded-2xl w-full min-w-[320px] max-w-[415px] relative m-auto;
 }
 
 .hero-image img {
