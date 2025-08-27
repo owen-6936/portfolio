@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+@import '../tailwind-custom-utilities.css';
+
+h1,
+h2,
+h3 {
+  @apply font-heading text-neutral leading-5 tracking-wide;
+}
+
+.contact-container {
+  @apply w-[90%] mx-auto my-10 flex flex-col justify-evenly gap-15;
+  @apply lg:flex-row lg:gap-10;
+}
+
+.contact-form-section {
+  @apply w-full rounded-3xl;
+}
+
+.contact-form {
+  @apply flex flex-col justify-around items-center gap-5;
+}
+
+.contact-form label {
+  @apply relative;
+}
+
+.contact-form label img {
+  @apply absolute left-4 top-1/2 transform -translate-y-1/2;
+}
+
+.contact-form label,
+input {
+  @apply h-10 w-[75%];
+}
+
+.contact-form .contact-form-field {
+  @apply rounded-3xl w-[75%] bg-primary;
+}
+
+.contact-form input.contact-form-field {
+  transition:
+    border-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  @apply w-full px-4 py-5 pl-12 text-lg text-primary border-accent-secondary border;
+}
+
+.contact-form input.contact-form-field:focus,
+.contact-form textarea.contact-form-field:focus {
+  @apply outline-none border-accent-primary shadow-lg border-2;
+}
+
+.contact-form textarea.contact-form-field {
+  @apply text-[15.5px] rounded-3xl pt-2.5 pl-3;
+}
+
+.contact-form button.contact-form-field {
+  @apply cursor-pointer h-10 bg-accent text-white border-1 text-sm outline-0;
+}
+
+.contact-form button.contact-form-field:focus,
+.contact-form button.contact-form-field:hover {
+  outline: 2px solid #4a6f77;
+  @apply bg-accent-hover text-[0.975rem] font-medium;
+}
+
+.contact-form button.contact-form-field:focus-visible {
+  outline: 2px solid #4a6f77;
+  outline-offset: 1px;
+  @apply bg-accent-hover text-[0.975rem] font-medium;
+}
+
+.contact-me-section {
+  @apply flex flex-col justify-center p-6 rounded-3xl w-full;
+  @apply lg:ml-5;
+}
+
+.contact-me-section h1 {
+  @apply relative text-[2.5rem] m-0 p-0;
+}
+
+.contact-me-section h1.bouncing-header {
+  @apply gravityBounce;
+}
+
+.personal-links {
+  @apply w-full list-none pt-4 mt-8 flex flex-col justify-between gap-6;
+}
+
+.personal-links li {
+  @apply flex items-center gap-3;
+}
+
+.personal-links img {
+  @apply w-6 h-6;
+}

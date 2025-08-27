@@ -1,0 +1,109 @@
+@import 'tailwindcss';
+@import '../tailwind-custom-utilities.css';
+
+/* #hero {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+.introduction {
+  @apply text-[30px] leading-[0.8] font-bold text-primary font-heading mx-auto mb-6 mt-3;
+}
+
+.hero {
+  @apply p-0 flex flex-col items-center justify-evenly gap-4;
+  @apply lg:px-2 lg:flex-row lg:justify-around lg:items-start;
+}
+
+.hero-image {
+  background-image: url('/src/assets/images/competent_owen_placeholder.webp');
+  background-position: center;
+  background-size: cover;
+  @apply blur-[0%] rounded-2xl w-full min-w-[320px] max-w-[415px] relative m-auto;
+}
+
+.hero-image img {
+  @apply w-full max-w-full h-[375px] max-h-[375px] object-cover object-center rounded-2xl block opacity-0 transition-opacity duration-500 ease-in-out;
+}
+
+.hero-image img.loaded {
+  @apply opacity-100;
+}
+
+.hero-image::after {
+  box-shadow: inset 3px 3px 10px 0 #000;
+  content: '';
+  @apply absolute top-0 rounded-2xl w-full h-full;
+}
+
+.hero-details {
+  @apply sm:p-4 pt-2 lg:pt-8 sm:min-w-[375px] max-w-[435px] sm:max-w-full sm:text-lg;
+  @apply lg:max-w-full;
+}
+
+.hero-details > p:first-child::first-letter {
+  @apply text-5xl leading-[0.8] font-bold text-primary font-logo mr-1 float-left;
+}
+
+.hero-secondary-details {
+  @apply flex flex-col space-y-6 md:space-y-0 md:space-x-8 md:flex-row mt-2 sm:mt-0 lg:mt-6 mb-8 p-4 pb-2 bg-gray-100 rounded-2xl shadow-lg;
+}
+.hero-details-links {
+  @apply flex flex-col gap-2 py-4;
+  @apply lg:py-2 lg:gap-0;
+}
+
+.hero-details-link {
+  @apply flex flex-row items-center gap-3 w-full;
+}
+
+/* SKILLS SECTION */
+
+.skill-list {
+  @apply p-0 m-0 flex flex-wrap justify-center gap-4;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.skill {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  @apply bg-white/50 text-primary p-[0.7rem_1.2rem] font-medium uppercase leading-2 whitespace-nowrap transition transform duration-200 ease-in-out rounded-3xl cursor-pointer;
+  @apply sm:text-lg sm:p-[0.9rem_1.4rem];
+}
+
+.skill:nth-child(even) {
+  @apply bg-dark text-white font-medium;
+}
+
+.skill:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  @apply transform -translate-y-0.5;
+}
+
+/* PROJECTS SECTION */
+
+.project-list {
+  @apply p-0 m-0 flex flex-wrap justify-center gap-4;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.project {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  @apply bg-white/50 text-primary p-[0.7rem_1.2rem] font-medium uppercase leading-2 whitespace-nowrap transition transform duration-200 ease-in-out rounded-3xl cursor-pointer;
+}
+
+.project:nth-child(even) {
+  @apply bg-dark text-white font-medium;
+}
+
+.project:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  @apply transform -translate-y-0.5;
+}

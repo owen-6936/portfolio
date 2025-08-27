@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+
+/* stylelint-disable
+  at-rule-no-unknown
+ */
+@utility bg-neutral {
+  background-color: #e0e0e0;
+}
+@utility bg-primary {
+  background-color: #fafafa;
+}
+@utility bg-secondary {
+  background-color: #ffffff;
+}
+@utility bg-dark {
+  background-color: #2c2c2c;
+}
+@utility bg-accent {
+  background-color: #5c859b;
+}
+
+@utility bg-accent-secondary {
+  background-color: rgba(163, 152, 142, 0.5);
+}
+@utility bg-accent-hover {
+  background-color: #4a6f83;
+}
+@utility text-neutral {
+  color: #666666;
+}
+@utility text-primary {
+  color: #2c2c2c;
+}
+@utility text-heading {
+  color: #212529;
+}
+@utility text-accent {
+  color: #5c859b;
+  text-shadow: 0 0 1px rgba(92, 127, 145, 0.6);
+}
+
+@utility ring-accent {
+  --tw-ring-color: #5c859b;
+}
+
+@utility border-accent-secondary {
+  border-color: rgba(163, 152, 142, 0.5);
+}
+@utility border-accent-primary {
+  border-color: #5c859b;
+}
+@utility text-accent-active {
+  color: #2c3e50;
+}
+@utility text-accent-hover {
+  color: #3a5968;
+}
+@utility text-accent-secondary {
+  color: #6c757d;
+}
+@utility border-primary {
+  border-color: #e9ecef;
+}
+@utility text-link {
+  color: #5e5752;
+}
+@utility text-link-hover {
+  color: #3f474a;
+}
+@utility text-link-active {
+  color: #2a2f31;
+}
+@utility font-primary {
+  font-family: 'Inter', 'sans-serif';
+}
+@utility font-logo {
+  font-family: 'Dancing_Script', 'Montserrat', 'serif';
+}
+@utility font-heading {
+  font-family: 'Barlow_Condensed', 'Montserrat', 'sans-serif';
+}
+@utility font-code {
+  font-family: 'Fira Code', 'monospace';
+}
+@utility sidebar {
+  width: var(--my-spacing-sidebar);
+}
+@utility nav-height {
+  height: 3.5rem;
+}
+
+@utility box-shadow {
+  box-shadow: 0 0 0px 3.5px rgba(0, 0, 0, 0.4);
+}
+
+@utility btn-box-shadow {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+@utility gravityBounce {
+  animation: gravityBounce 1.8s ease-in-out infinite;
+}
+
+@keyframes gravityBounce {
+  0%,
+  100% {
+    transform: translateY(25px);
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+  }
+  50% {
+    transform: translateY(-10px);
+    animation-timing-function: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  }
+}

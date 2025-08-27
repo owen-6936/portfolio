@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+@import './tailwind-custom-utilities.css';
+
+@font-face {
+  font-family: 'Dancing_Script';
+  src: url('/src/assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.woff2')
+    format('woff2-variations');
+  font-weight: 100 500;
+  font-style: normal italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow_Condensed';
+  src: url('/src/assets/fonts/Barlow_Condensed/barlowcondensed-bold-webfont.woff2')
+    format('woff2-variations');
+  font-weight: 100 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/src/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf')
+    format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+  --side-bar-width: 320px;
+  --nav-height: 3.5rem;
+}
+
+body {
+  @apply font-primary;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+p {
+  @apply mb-4 leading-relaxed;
+}
+
+.link {
+  @apply text-accent hover:text-accent-hover;
+}
+
+.link-active {
+  @apply text-accent-active underline underline-offset-2;
+}
+
+.sidebar-link {
+  @apply rounded-2xl p-2 text-accent hover:bg-accent hover:text-white;
+}
+
+.sidebar-link-active {
+  @apply text-gray-600 font-bold rounded-2xl p-2;
+}
