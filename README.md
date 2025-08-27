@@ -1,92 +1,93 @@
-# Owen Erhabor's Portfolio
+# Owen Erhabor's Personal Portfolio
 
-## Project Description
+## Project Overview
 
-Welcome to my personal portfolio website! This project serves as a dynamic and adaptive platform to showcase my journey, skills, and projects as an aspiring Full-Stack Developer.
+Welcome to my personal portfolio, a modern and dynamic web platform designed to showcase my skills and projects as a full-stack developer. Built with a focus on modern, component-based architecture, this project not only serves as a hub for my work but also as a live demonstration of my ability to build robust, scalable, and user-friendly single-page applications.
 
-This portfolio is being developed with a focus on modern, component-based architecture using React. My aim is to create a dynamic platform that not only presents my work but also demonstrates my ability to build robust, scalable, and user-friendly single-page applications.
+This portfolio is a reflection of my journey, blending foundational skills in **vanilla JavaScript** with cutting-edge front-end technologies.
 
-## Technologies Used
+---
 
-This project is built using modern front-end technologies:
+## Core Technologies & Architecture
 
-- **React:** For building a dynamic, component-based user interface.
-- **React Router:** For structured, client-side navigation.
-- **HTML5:** For structuring the content.
-- **CSS3:** For styling and layout.
-- **Vanilla JavaScript:** As a core foundational skill used throughout the project.
+This project is built on a foundation of modern web technologies, ensuring a highly performant and maintainable application.
 
-### Future Enhancements (Planned)
+### Front-End
 
-- **Node.js:** For the backend of the custom content management system (CMS) and portfolio updater software.
-- **Database:** To store and manage portfolio content (projects, skills, etc.) dynamically.
-- **Theme Switching:** Implementing light/dark mode functionality.
+- **React:** The core library for building a dynamic, component-based user interface.
+- **React Router DOM:** Manages structured, client-side navigation between different pages.
+- **Framer Motion:** Used for creating smooth, aesthetically pleasing animations and transitions.
+- **Tailwind CSS:** A utility-first CSS framework for rapid and consistent styling.
+- **TypeScript:** Provides static typing to enhance code quality and developer experience.
+
+### Planned Enhancements (Future)
+
+- **Node.js & Express:** For building the back-end of the custom content management system (CMS).
+- **MongoDB:** A NoSQL database to dynamically store and manage portfolio content, such as projects and skills.
+- **Theme Switching:** Implementing a user-selectable light/dark mode for enhanced accessibility.
+- **Custom Portfolio Updater:** A self-built back-end system to allow for dynamic, real-time content management without code changes.
+
+---
 
 ## Key Features
 
-- **Minimalist & Clean Design:** Focus on readability and intuitive user experience.
-- **Component-Based Architecture:** Reusable components for a scalable and maintainable codebase.
-- **Responsive Layout:** Adapts gracefully to various screen sizes (desktop, tablet, mobile).
-- **Structured Navigation:** Clear navigation for easy access to all sections.
-- **Home Page:** Concise introduction, top skills, and featured projects (planned).
-- **About Me Page:** Detailed personal journey, skills breakdown, and motivations.
-- **Projects Page:** Dedicated section to showcase individual projects with comprehensive details and visuals.
-- **Contact Page:** Multiple ways to get in touch, including direct links and a contact form (planned).
-- **404 Error Page:** Custom page for unhandled routes.
-- **Theme Switcher (Planned):** User-selectable light and dark modes.
-- **Custom Portfolio Updater Software (Planned):** A self-built backend system to manage portfolio content dynamically.
+- **Clean & Responsive Design:** A minimalist aesthetic that ensures a consistent and intuitive experience across all devices (desktop, tablet, and mobile).
+- **Component-Based Architecture:** Reusable and scalable components for a modular and maintainable codebase.
+- **Structured Navigation:** A clear and logical navigation system for seamless browsing.
+- **Dynamic Content:** Future-proofed to pull project and skill data from a back-end database.
+- **Integrated Contact Form:** A functional contact form for direct inquiries.
 
-## Installation & Setup
+---
 
-To get a local copy up and running, follow these simple steps:
+## Getting Started
+
+To get a local copy of this project up and running, follow these simple steps.
+
+### Prerequisites
+
+You will need **Node.js** and **npm** (or `yarn`) installed on your machine.
+
+### Installation
 
 1. **Clone the repository:**
 
-   ```bash
-   git clone [https://github.com/owen-6936/portfolio.git](https://github.com/owen-6936/portfolio.git)
-   ```
+    ```bash
+    git clone [https://github.com/owen-6936/portfolio.git](https://github.com/owen-6936/portfolio.git)
+    ```
 
 2. **Navigate to the project directory:**
 
-   ```bash
-   cd portfolio
-   ```
+    ```bash
+    cd portfolio
+    ```
 
-3. **Install dependencies:**
+3. **Install the dependencies:**
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
-   or
+    or
 
-   ```bash
-   yarn install
-   ```
+    ```bash
+    yarn install
+    ```
 
 4. **Start the development server:**
 
-   ```bash
-   npm start
-   ```
+    ```bash
+    npm run dev
+    ```
 
-   or
+    The application will be available at `http://localhost:5173` or a similar address.
 
-   ```bash
-   yarn start
-   ```
-
-## Usage
-
-Once the development server is running, you can view the portfolio in your web browser at `http://localhost:3000`. You can navigate through the different sections using the navigation bar.
-
-## Contributing
-
-This is a personal portfolio project, but I welcome feedback and suggestions! If you have any ideas for improvements, feel free to open an issue or reach out directly.
+---
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
+
+---
 
 ## Author
 
@@ -94,6 +95,4 @@ This project is licensed under the MIT License.
 
 - [GitHub Profile](https://github.com/owen-6936)
 - [LinkedIn Profile](https://linkedin.com/in/owen-erhabor-80958b262)
-- [Twitter Profile](https://x.com/Owen66936)
-
----
+- [Twitter/X Profile](https://x.com/Owen66936)
