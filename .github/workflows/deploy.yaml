@@ -7,13 +7,20 @@ on:
   # This workflow will run whenever there is a push to the 'main' branch.
   push:
     branches:
-      - main
+      - main # Or your default branch, e.g., 'master'
 
 jobs:
-  deploy:
+  build-and-deploy:
     # We will use the latest version of Ubuntu to run our job.
     runs-on: ubuntu-latest
-
+    
+    # This is the new permissions block that addresses the warning.
+    # It explicitly defines the minimum permissions required for the workflow.
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    
     steps:
       # Step 1: Checkout your repository's code.
       - name: Checkout repository
