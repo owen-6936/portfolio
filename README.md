@@ -51,35 +51,35 @@ You will need **Node.js** and **npm** (or `yarn`) installed on your machine.
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone [https://github.com/owen-6936/portfolio.git](https://github.com/owen-6936/portfolio.git)
-    ```
+   ```bash
+   git clone [https://github.com/owen-6936/portfolio.git](https://github.com/owen-6936/portfolio.git)
+   ```
 
 2. **Navigate to the project directory:**
 
-    ```bash
-    cd portfolio
-    ```
+   ```bash
+   cd portfolio
+   ```
 
 3. **Install the dependencies:**
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
-    or
+   or
 
-    ```bash
-    yarn install
-    ```
+   ```bash
+   yarn install
+   ```
 
 4. **Start the development server:**
 
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 
-    The application will be available at `http://localhost:5173` or a similar address.
+   The application will be available at `http://localhost:5173` or a similar address.
 
 ---
 

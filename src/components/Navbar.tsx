@@ -11,13 +11,12 @@ export default function Navbar() {
 
   const location = useLocation();
 
-  const handleLocationChange = () => {
-    const currentPath = location.pathname;
-    const activeLink = links.find((link) => link.url === currentPath);
-    setActiveNavItem(activeLink ? String(activeLink.key) : '');
-  };
-
   useEffect(() => {
+    const handleLocationChange = () => {
+      const currentPath = location.pathname;
+      const activeLink = links.find((link) => link.url === currentPath);
+      setActiveNavItem(activeLink ? String(activeLink.key) : '');
+    };
     handleLocationChange();
     window.scrollTo(0, 0);
   }, [location.pathname]);
