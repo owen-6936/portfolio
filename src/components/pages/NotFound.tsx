@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const NotFoundPage: React.FC = () => {
   return (
@@ -19,13 +20,12 @@ const NotFoundPage: React.FC = () => {
           existed.
         </p>
 
-        {/* A modern-looking call-to-action button */}
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-block px-8 py-3 rounded-full font-semibold text-lg bg-white text-gray-600 shadow-md transition-transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50"
         >
           Go Back Home
-        </a>
+        </Link>
       </div>
     </div>
   );
