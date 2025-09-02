@@ -22,7 +22,7 @@ const NotFoundPage: React.FC = () => {
         {/* A modern-looking call-to-action button */}
         <a
           href="/"
-          className="inline-block px-8 py-3 rounded-full font-semibold text-lg bg-white text-gray-900 shadow-md transition-transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50"
+          className="inline-block px-8 py-3 rounded-full font-semibold text-lg bg-white text-gray-600 shadow-md transition-transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50"
         >
           Go Back Home
         </a>
