@@ -6,7 +6,7 @@ export default function CustomLink({
 }: LinkProps): JSX.Element {
   return (
     <span className={props.className}>
-      <Link {...props} className="">
+      <Link {...props} className="inline-block w-full h-full">
         {children}
       </Link>
     </span>

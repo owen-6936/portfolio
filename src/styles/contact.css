@@ -4,11 +4,11 @@
 h1,
 h2,
 h3 {
-  @apply font-heading text-neutral leading-5 tracking-wide;
+  @apply font-heading text-neutral tracking-wide;
 }
 
 .contact-container {
-  @apply w-[90%] mx-auto my-10 flex flex-col justify-evenly gap-15;
+  @apply sm:w-[90%] mx-auto my-10 flex flex-col justify-evenly gap-15;
   @apply lg:flex-row lg:gap-10;
 }
 
@@ -30,11 +30,11 @@ h3 {
 
 .contact-form label,
 input {
-  @apply h-10 w-[75%];
+  @apply h-10 w-[85%];
 }
 
 .contact-form .contact-form-field {
-  @apply rounded-3xl w-[75%] bg-primary;
+  @apply rounded-3xl w-[85%] bg-primary;
 }
 
 .contact-form input.contact-form-field {

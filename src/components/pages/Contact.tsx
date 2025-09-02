@@ -14,7 +14,7 @@ export default function Contact() {
         key={'contact-form'}
         amount={0.1}
         bg="bg-accent-secondary"
-        padding="p-8"
+        padding="p-4"
         className="contact-container"
       >
         <section className="contact-form-section">

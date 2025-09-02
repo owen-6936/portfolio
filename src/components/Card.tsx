@@ -83,7 +83,7 @@ const CardHeader: React.FC<CardHeaderProps> = ({
   <div className={cn('mb-4', className)}>
     <div className={`flex items-center gap-2 ${alignment[align]}`}>
       {icon && <div className="w-5 h-5 mb-0.5 text-blue-400">{icon}</div>}
-      <h2
+      <h1
         className={cn(
           'text-3xl sm:text-4xl lg:text-5xl font-bold mb-1 w-full',
           gradient
@@ -92,7 +92,7 @@ const CardHeader: React.FC<CardHeaderProps> = ({
         )}
       >
         {title}
-      </h2>
+      </h1>
     </div>
     {subtitle && (
       <p className={cn('text-sm text-gray-300 mt-1', alignment[align])}>
