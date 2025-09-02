@@ -27,7 +27,7 @@ const socials: SocialLink[] = [
   { key: 'DEV', url: 'https://dev.to/owen6936', title: 'DEV', logo: dev },
   {
     key: 'X formely Twitter',
-    url: 'https://twitter.com/owen66936',
+    url: 'https://x.com/owen66936',
     title: 'X',
     logo: twitter,
   },

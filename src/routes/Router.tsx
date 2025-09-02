@@ -1,12 +1,14 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, type RouteObject } from 'react-router-dom';
 import RootLayout from '../layout/RootLayout';
 import Home from '../components/Home';
 import Contact from '../components/pages/Contact';
+import NotFoundPage from '../components/pages/NotFound';
 
-export const routes = [
+export const routes: RouteObject[] = [
   {
     path: '/',
     element: <RootLayout />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         path: '/',
