@@ -48,6 +48,7 @@ export default function SidebarMenu({
                     ? 'sidebar-link-active'
                     : 'sidebar-link'
                 }`}
+                onClick={onClose}
               >
                 {link.title}
               </Link>

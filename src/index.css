@@ -41,11 +41,6 @@
 body {
   @apply font-primary;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 p {
   @apply mb-4 leading-relaxed;
 }
