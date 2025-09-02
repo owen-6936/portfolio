@@ -112,3 +112,20 @@
     animation-timing-function: cubic-bezier(0.8, 0.2, 0.2, 0.8);
   }
 }
+
+@utility gradient-move {
+  background: linear-gradient(-45deg, #1f2937, #374151, #111827, #374151);
+  background-size: 400% 400%;
+  animation: gradient-move 15s ease infinite;
+}
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

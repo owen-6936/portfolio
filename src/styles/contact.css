@@ -1,9 +1,9 @@
 @import 'tailwindcss';
 @import '../tailwind-custom-utilities.css';
 
-h1,
-h2,
-h3 {
+.contact-container h1,
+.contact-container h2,
+.contact-container h3 {
   @apply font-heading text-neutral tracking-wide;
 }
 
